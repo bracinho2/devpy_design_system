@@ -75,52 +75,136 @@ class DevPyColors extends ThemeExtension<DevPyColors> {
   }
 }
 
+/// Light Primary Color
+const lightPrimaryColor = Color(0xff050922);
+
+/// Light Secondary Color
+const lightSecondaryColor = Color(0xffFAFBFF);
+
 ColorScheme lightColorScheme = const ColorScheme(
   brightness: Brightness.light,
-  // fundo do filled button;
-  primary: Color(0xff050922),
-  onPrimary: Color(0xFFFFFFFF),
-  primaryContainer: Color(0xff050922), // cor de fundo do bota
-  onPrimaryContainer: Color(0xffFAFBFF), // texto do botao
+
+  /// Usado como fundo de botões "Filled"
+  primary: lightPrimaryColor,
+
+  /// Cor do texto ou ícone sobre o fundo do botão "Filled"
+  onPrimary: lightSecondaryColor,
+
+  /// Cor de fundo de botões "Filled"
+  primaryContainer: lightPrimaryColor,
+
+  /// Cor do texto ou ícone sobre o fundo de botões "Filled"
+  onPrimaryContainer: lightSecondaryColor,
+
+  /// Usado em componentes secundários, como botões alternativos
   secondary: Color(0xFF03DAC6),
+
+  /// Cor do texto ou ícone sobre componentes secundários
   onSecondary: Color(0xFF000000),
+
+  /// Cor de fundo de botões ou containers secundários
   secondaryContainer: Color(0xFF018786),
+
+  /// Cor do texto ou ícone sobre o fundo de containers secundários
   onSecondaryContainer: Color(0xFF03DAC6),
+
+  /// Cor usada em elementos de erro, como textos e ícones
   error: Color(0xFFB00020),
+
+  /// Cor do texto ou ícone sobre elementos de erro
   onError: Color(0xFFFFFFFF),
-  surfaceContainer: Color(0xffFAFBFF),
+
+  /// Cor de fundo de superfícies, como cartões ou modais
+  surfaceContainer: lightSecondaryColor,
+
+  /// Cor usada em superfícies variantes (ex.: áreas mais escuras)
   onSurfaceVariant: Color(0xFF000000),
+
+  /// Cor padrão das superfícies
   surface: Color(0xFFFFFFFF),
+
+  /// Cor do texto sobre superfícies
   onSurface: Color(0xFF000000),
-  //outlined button
-  outline: Color(0xff050922),
-  shadow: Color(0xFF000000),
+
+  /// Cor da borda de botões "Outlined"
+  outline: lightPrimaryColor,
+
+  /// Sombra usada em elevações
+  shadow: lightPrimaryColor,
+
+  /// Cor usada na superfície inversa (ex.: contraste alto)
   inverseSurface: Color(0xFF303030),
-  onInverseSurface: Color(0xFFFFFFFF),
+
+  /// Cor do texto sobre a superfície inversa
+  onInverseSurface: lightSecondaryColor,
+
+  /// Cor de destaque inversa, usada para indicar ação ou estado de foco
   inversePrimary: Color(0xFF3700B3),
 );
 
+/// Dark Primary Color
+const darkPrimaryColor = Color(0xffFAFBFF);
+
+/// Dark Secondary Color
+const darkSecondaryColor = Color(0xff050922);
+
 ColorScheme darkColorScheme = const ColorScheme(
   brightness: Brightness.dark,
-  primary: Color(0xffFAFBFF),
+
+  /// Usado como fundo de botões "Filled"
+  primary: darkPrimaryColor,
+
+  /// Cor do texto ou ícone sobre o fundo do botão "Filled"
   onPrimary: Color(0xFF000000),
-  //cor de fundo
-  primaryContainer: Color(0xffFAFBFF),
-  //cor do texto;
-  onPrimaryContainer: Color(0xff050922),
+
+  /// Cor de fundo de botões "Filled"
+  primaryContainer: darkPrimaryColor,
+
+  /// Cor do texto ou ícone sobre o fundo de botões "Filled"
+  onPrimaryContainer: darkSecondaryColor,
+
+  /// Usado em componentes secundários, como botões alternativos
   secondary: Color(0xFF03DAC6),
+
+  /// Cor do texto ou ícone sobre componentes secundários
   onSecondary: Color(0xFF000000),
+
+  /// Cor de fundo de botões ou containers secundários
   secondaryContainer: Color(0xFF018786),
+
+  /// Cor do texto ou ícone sobre o fundo de containers secundários
   onSecondaryContainer: Color(0xFF03DAC6),
+
+  /// Cor usada em elementos de erro, como textos e ícones
   error: Color(0xFFCF6679),
+
+  /// Cor do texto ou ícone sobre elementos de erro
   onError: Color(0xFF370617),
-  surfaceContainer: Color(0xff050922),
+
+  /// Cor de fundo de superfícies, como cartões ou modais
+  surfaceContainer: darkSecondaryColor,
+
+  /// Cor usada em superfícies variantes (ex.: áreas mais escuras)
   onSurfaceVariant: Color(0xFFFFFFFF),
+
+  /// Cor padrão das superfícies
   surface: Color(0xFF1E1E1E),
+
+  /// Cor do texto sobre superfícies
   onSurface: Color(0xFFFFFFFF),
-  outline: Color(0xffFAFBFF),
+
+  /// Cor da borda de botões "Outlined"
+  outline: darkPrimaryColor,
+
+  /// Sombra usada em elevações
   shadow: Color(0xFF000000),
+
+  /// Cor usada na superfície inversa (ex.: contraste alto)
   inverseSurface: Color(0xFFEEEEEE),
+
+  /// Cor do texto sobre a superfície inversa
   onInverseSurface: Color(0xFF000000),
+
+  /// Cor de destaque inversa, usada para indicar ação ou estado de foco
   inversePrimary: Color(0xFF3700B3),
 );
